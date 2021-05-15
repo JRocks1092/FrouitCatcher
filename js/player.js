@@ -28,6 +28,11 @@ class Player {
         });
     }
 
+    delete(){
+        var playerInfoRef = database.ref('players');
+        playerInfoRef.remove();
+    }
+
     static getPlayerInfo() {
         var playerInfoRef = database.ref('players');
         playerInfoRef.on("value", (data) => {
