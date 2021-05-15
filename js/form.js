@@ -55,6 +55,7 @@ class Form{
             game.update(0);
             player.updateCount(0);
 
+            player.delete();
             
         });
 
